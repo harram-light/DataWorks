@@ -35,7 +35,7 @@ namespace TestTasksLibrary
                         break;
                 }
             }
-            return skob.Count > 0 ? false : true;
+            return skob.Count == 0 ? true : false;
         }
 
     }
