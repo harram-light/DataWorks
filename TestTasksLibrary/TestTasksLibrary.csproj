@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BalancedBracket.cs" />
     <Compile Include="Task_0.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
