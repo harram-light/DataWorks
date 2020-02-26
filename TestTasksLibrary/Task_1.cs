@@ -19,18 +19,12 @@ namespace TestTasksLibrary
                     case '(':
                         skob.Push(s[i]);
                         break;
+
                     case ')':
-
-                        try
-                        {
-                            skob.Pop();
-                        }
-                        catch
-                        {
-                            return false;
-                        }
-
+                        try { skob.Pop(); }
+                        catch { return false; }
                         break;
+
                     default:
                         break;
                 }
