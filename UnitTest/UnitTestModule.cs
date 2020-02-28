@@ -41,25 +41,25 @@ namespace UnitTest
         [TestMethod]
         public void Test_0()
         {
-            Assert.AreEqual(true, TestTasksLibrary.BalancedBracket.Balanced("(lkjl(l)()KKK)"));
+            Assert.AreEqual(true, BalancedBracket.Balanced("(lkjl(l)()KKK)"));
         }
 
         [TestMethod]
         public void Test_1()
         {
-            Assert.AreEqual(false, TestTasksLibrary.BalancedBracket.Balanced(")(lkjl(l)()KKK)"));
+            Assert.AreEqual(false, BalancedBracket.Balanced(")(lkjl(l)()KKK)"));
         }
 
         [TestMethod]
         public void Test_2()
         {
-            Assert.AreEqual(true, TestTasksLibrary.BalancedBracket.Balanced("((1+3)()(4+(3-5)))"));
+            Assert.AreEqual(true, BalancedBracket.Balanced("((1+3)()(4+(3-5)))"));
         }
 
         [TestMethod]
         public void Test_3()
         {
-            Assert.AreEqual(false, TestTasksLibrary.BalancedBracket.Balanced("((1+3)()(4+(3-5)))("));
+            Assert.AreEqual(false, BalancedBracket.Balanced("((1+3)()(4+(3-5)))("));
         }
 
     }
