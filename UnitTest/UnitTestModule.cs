@@ -5,7 +5,7 @@ using TestTasksLibrary;
 namespace UnitTest
 {
     [TestClass]
-    public class Task_0 //1-е тестовое задание
+    public class RomanNumTests //1-е тестовое задание
     {
 
         [TestMethod]
@@ -35,7 +35,7 @@ namespace UnitTest
     }
 
     [TestClass]
-    public class Task_1 //2-е тестовое задание
+    public class BalancedBracketTests //2-е тестовое задание
     {
 
         [TestMethod]
@@ -60,6 +60,28 @@ namespace UnitTest
         public void Test_3()
         {
             Assert.AreEqual(false, TestTasksLibrary.BalancedBracket.Balanced("((1+3)()(4+(3-5)))("));
+        }
+
+    }
+
+    [TestClass]
+    public class DoubleLLTests //2-е тестовое задание
+    {
+
+        [TestMethod]
+        public void test_on_reverse()
+        {
+            DoubleLL<string> TestDLL = new DoubleLL<string>();
+            TestDLL.AddFirst("0-я нода");
+            TestDLL.AddLast("1-я нода");
+            TestDLL.AddLast("2-я нода");
+            TestDLL.AddLast("3-я нода");
+            IDoubleLinkedListNode<string> Expected = TestDLL.Last;
+            TestDLL.Reverse();
+
+            Assert.AreEqual(Expected, TestDLL.First);
+
+
         }
 
     }

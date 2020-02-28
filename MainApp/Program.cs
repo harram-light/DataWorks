@@ -11,7 +11,7 @@ namespace MainApp
     {
         static void Main(string[] args)
         {
-           
+
         }
     }
 }
